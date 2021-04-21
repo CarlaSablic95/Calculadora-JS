@@ -8,4 +8,4 @@
 4) Al presionar el botón resultado (=), se mostrará el total de la operación.
  ![calcu4](https://user-images.githubusercontent.com/56772236/115609431-e639d300-a2bd-11eb-8ff3-ccea8f88e2be.jpg)
 5) Por último, para realizar ora operación matématica, se puede reiniciar la pantalla.
-6) ![calcu6](https://user-images.githubusercontent.com/56772236/115614581-4469b480-a2c4-11eb-8435-bddfed123861.jpg)
+![calcu6](https://user-images.githubusercontent.com/56772236/115614581-4469b480-a2c4-11eb-8435-bddfed123861.jpg)
