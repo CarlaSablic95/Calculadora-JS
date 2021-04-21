@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/* * selector universal*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 80%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;
+}
+
+/* título */ 
+h1 {
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	margin-bottom: 50px;
+	margin-top: 10px;
+	color: transparent;
+	background: url('../img/fondo.jpg');
+	background-position: center;
+	background-size: 50%;
+	-webkit-background-clip: text;
+
+}
+
+/* div padre */
+.calculadora {
+	max-width: 40%;
+}
+
+/* Div que contiene el visor de la calculadora */
+
+.display{
+	margin-top: 5px;
+	padding: 10px 20px 10px 20px;
+	display: flex;
+	background-image: url('../img/fondo.jpg');
+	box-shadow: 2px 3px 4px gray;
+}
+
+/*visor de la calculadora */
+#visor {
+	padding: 10px;
+	width: 100%;
+}
+
+/* Contenedor de los botones de cada nro */
+.botones{
+	padding: 15px;
+	display: flex;
+	justify-content: space-evenly;
+	background-color: #f79d65;
+	box-shadow: 2px 3px 4px gray;
+}
+
+/* Estilos para todos los inputs */
+
+input {
+    width: 30%;
+    padding: 10px;
+	font-size: 1em;
+	margin-top: 10px;
+	margin-right: 2px;
+}
+
+input[placeholder="Resultado"] {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.5em
+}
+
+
+input[value="0"] {
+ width: 95%;
+}
+
+/* Estilos para los input de tipo button */
+
+input[type="button"] {
+	border-radius: 10px;
+	border: none;
+	box-shadow: 2px 3px 4px gray;
+	background-color:#f6fff8;
+	color: #000000;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Transición al pasar el mouse */
+.numeros>input[type="button"]:hover {
+	background-color: #f48c06;
+	color:#fff;
+}
+
+/* div que contiene los botones numéricos */
+.numeros {
+	padding: 10px;
+	width: 75%;
+}
+
+/* div que contiene los botones de operadores */
+.operadores {
+	width: 40%;
+	margin-left: 10px;
+	font-size: 1.5em;
+	margin-top: 10px;
+	padding: 5px;
+}
+
+/* Estilos para los input operadores */
+.operadores > input {
+	width: 30%;
+	color:#ff5400;
+	font-size:1em;
+}
+
+/* Transición al pasar el mouse */
+.operadores>input:hover {
+	transform: scale(1.1);
+    transition-duration: 0.5s;
+	color:white;
+	background-color: #ee813e;
+}
+
+.operadores > input[value="+"], input[value="*"] {
+	margin-right: 35px;
+}
+

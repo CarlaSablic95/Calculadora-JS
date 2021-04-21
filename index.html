@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="shortcut icon" href="img/calculator.png" type="image/x-icon">
+	<title>Calculadora con JS</title>
+</head>
+<body>
+	<div class="calculadora">
+		<h1>Calculadora en JS</h1>
+		<div class="display">
+			<input type="text" value="" id="visor" placeholder="Resultado">
+		</div>
+
+		<div class="botones">
+			<div class="numeros"><!-- this.value es un parametro que le paso a la funcion mostrar(), toma el valor del value del input -->
+			<input type="button" value="7" onclick="ingresar(this.value)">
+			<input type="button" value="8" onclick="ingresar(this.value)">
+			<input type="button" value="9" onclick="ingresar(this.value)">
+			<input type="button" value="4" onclick="ingresar(this.value)">
+			<input type="button" value="5" onclick="ingresar(this.value)">
+			<input type="button" value="6" onclick="ingresar(this.value)">
+			<input type="button" value="1" onclick="ingresar(this.value)">
+			<input type="button" value="2" onclick="ingresar(this.value)">
+			<input type="button" value="3" onclick="ingresar(this.value)">
+			<input type="button" value="0" onclick="ingresar(this.value)">
+			
+		</div>
+	
+		<div class="operadores">
+			<input type="button" value="C" onclick="borrar()">
+			<input type="button" value="+" onclick="operar(this.value)">
+			<input type="button" value="-" onclick="operar(this.value)">
+			<input type="button" value="*" onclick="operar(this.value)">
+			<input type="button" value="/" onclick="operar(this.value)">
+			<input type="button" value="=" onclick="mostrarResultado()">
+		</div>
+	</div>
+</div>
+
+
+	<script src="js/scripts.js"></script>
+</body>
+</html>
